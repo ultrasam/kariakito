@@ -1,29 +1,34 @@
 .container {
-  width: 710px;
+  width: 1024px;
+  height: 768px;
+  background-image: url(../images/background.png);
+}
+
+tbody tr:nth-child(even) td, tbody tr.even td {background:none;}
+
+.alturatotal {
+    height: 100%;
+}
+
+.alturaminima {
+    height: 1px;
 }
 
 body {
-  background: #cff;
+  background: #f7f7f7;
 }
 
-header {
-  padding-top: 20px;
+.conborde {
+    border: medium solid;
+    padding: 0px;
 }
 
-header img {
-  padding: 1em;
-  background: #fff;
-}
-
-section {
-  margin-top: 1em;
-  font-size: 120%;
-  padding: 20px;
-  background: #fff;
-}
-
-section h1 {
-  font-size: 200%;
+.logo {
+  padding-top: 0px;
+  float: left;
+  position: relative;
+  top: 28px;
+  left: 660px
 }
 
 /* Links */
@@ -46,14 +51,12 @@ a:visited {
 
 nav {
   float: right;
+  padding-top: 0px;
+  position: relative;
+  top: -100px;
+  right: 440px
 }
-
-nav {
-    background-color: white;
-    padding: 0 0.7em;
-    white-space: nowrap;
-}
-
+/*
 nav ul {
     margin: 0;
     padding: 0;
@@ -78,21 +81,7 @@ nav ul li a:hover {
     text-decoration: underline;
     color: #09c;
 }
-
-/* Sign up button */
-
-a.signup_button {
-    margin-left: auto;
-    margin-right: auto;
-    display:block;
-    text-align: center;
-    width: 190px;
-    color: #fff;
-    background: #006400;
-    font-size: 150%;
-    font-weigth: bold;
-    padding: 20px;
-}
+*/
 
 /* Round corners */
 
@@ -102,7 +91,7 @@ a.signup_button {
     border-radius:          10px;
 }
 
-/* Footer Styling */
+/* Footer Styling 
 
 footer {
     text-align: center;
@@ -111,7 +100,7 @@ footer {
     margin-left: auto;
     margin-right: auto;        
 }
-
+*/
 footer nav {
     float: none;
 }
