@@ -54,6 +54,7 @@ nav {
   /*float: right;*/
   position: relative;
   top: -100px;
+  color: #b2b2b2;
   /*right: 440px*/
 }
 
@@ -73,6 +74,7 @@ nav ul li {
 
 nav ul li a {
     font-weight: bold;
+    color: #b2b2b2;
 }
 
 nav ul li a:visited {
@@ -87,7 +89,8 @@ nav ul li a:hover {
 
 /* Round corners */
 
-.round {
+.round {    color: #b2b2b2;
+
     -moz-border-radius:     10px;
     -webkit-border-radius:  10px;
     border-radius:          10px;
