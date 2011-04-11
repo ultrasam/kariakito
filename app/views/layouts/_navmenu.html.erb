@@ -1,9 +1,13 @@
 <nav>
-  <table>
-    <tr>
-      <td><%= link_to "Home", root_path %></td>
-      <td><%= link_to "Help", '#' %></td>
-      <td><%= link_to "Sign in", '#' %></td>
-    </tr>
-  </table>
+  <ul>
+      <li><p><%= link_to "acerca de", root_path, :class => "navmenu" %></li>
+      <li> - </li>
+      <li><%= link_to "servicios", '#' %></li>
+      <li> - </li>
+      <li><%= link_to "somos", '#' %></li>
+      <li> - </li>
+      <li><%= link_to "portafolio", '#' %></li>
+      <li> - </li>
+      <li><%= link_to "contacto", '#' %></li>
+  </ul>
 </nav>
