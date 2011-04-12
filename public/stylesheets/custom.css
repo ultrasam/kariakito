@@ -2,6 +2,8 @@
   width: 1024px;
   height: 768px;
   background-image: url(../images/background.png);
+  background-repeat:no-repeat;
+  /*background-attachment:fixed;*/
 }
 
 tbody tr:nth-child(even) td, tbody tr.even td {background:none;}
@@ -15,8 +17,8 @@ tbody tr:nth-child(even) td, tbody tr.even td {background:none;}
 }
 
 body {
-  background: #f7f7f7;
-  background-image: url(../images/backrightpixel.png), url(../images/backleftpixel.png);
+  background: #0299af;
+  /*background-image: url(../images/backrightpixel.png), url(../images/backleftpixel.png);*/
   background-repeat: repeat-x;
   background-position: top left, top right;
 }
