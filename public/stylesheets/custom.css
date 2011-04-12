@@ -16,6 +16,9 @@ tbody tr:nth-child(even) td, tbody tr.even td {background:none;}
 
 body {
   background: #f7f7f7;
+  background-image: url(../images/backrightpixel.png), url(../images/backleftpixel.png);
+  background-repeat: repeat-x;
+  background-position: top left, top right;
 }
 
 .conborde {
@@ -27,8 +30,9 @@ body {
   padding-top: 0px;
   float: left;
   position: relative;
-  top: 0px;
-  left: 660px
+  z-index: 2;
+  top: 10px;
+  left: 660px;
 }
 
 /* Links */
@@ -40,7 +44,7 @@ a {
 
 a:hover {
   color: #069;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:visited {
@@ -51,9 +55,10 @@ a:visited {
 
 nav {
   text-align: center;
-  /*float: right;*/
+  float: left;
   position: relative;
-  top: -100px;
+  z-index: 1;
+  top: -50px;
   color: #b2b2b2;
   /*right: 440px*/
 }
@@ -82,7 +87,7 @@ nav ul li a:visited {
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: #737373;
 }
 
@@ -130,7 +135,7 @@ footer ul li a:visited {
 }
 
 footer ul li a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: #737373;
 }
 

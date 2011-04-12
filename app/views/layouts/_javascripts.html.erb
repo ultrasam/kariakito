@@ -1,0 +1,11 @@
+<%= javascript_include_tag 'jquery-1.5.2' %>
+<script type="text/javascript">                                         
+  $(document).ready(function() {
+    $("#menu").hide();
+    $("#logo").click(function(event){
+      event.preventDefault();
+      $("#menu").show();
+      /*$("#menu").animate({ height: 'show', width: 'show', opacity: 'show'}, 'slow');*/
+    });
+  });
+</script>
