@@ -4,6 +4,7 @@
   background-image: url(../images/background.png);
   background-repeat:no-repeat;
   /*background-attachment:fixed;*/
+  background-position:center top;
 }
 
 tbody tr:nth-child(even) td, tbody tr.even td {background:none;}
@@ -18,9 +19,11 @@ tbody tr:nth-child(even) td, tbody tr.even td {background:none;}
 
 body {
   background: #0299af;
-  /*background-image: url(../images/backrightpixel.png), url(../images/backleftpixel.png);*/
-  background-repeat: repeat-x;
-  background-position: top left, top right;
+  background-image: url(../images/back_pattern.png);
+  background-repeat: repeat-y;
+  background-attachment:fixed;
+  background-position: center bottom;
+  font-size: 12px;
 }
 
 .conborde {
@@ -75,22 +78,22 @@ nav ul li {
     display: inline-block;
     padding-left: 5px;
     padding-right: 5px;
-    color: #b2b2b2;
-     /*font-family: Arial;*/
+    color: #bebebe;
+    font-family: Arial;
 }
 
 nav ul li a {
     font-weight: bold;
-    color: #b2b2b2;
+    color: #bebebe;
 }
 
 nav ul li a:visited {
-    color: #b2b2b2;
+    color: #bebebe;
 }
 
 nav ul li a:hover {
     text-decoration: none;
-    color: #737373;
+    color: #949292;
 }
 
 
