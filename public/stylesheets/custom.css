@@ -7,6 +7,11 @@
   background-position:center top;
 }
 
+.otro {
+  width: 1024px;
+  height: 300px;
+}
+
 tbody tr:nth-child(even) td, tbody tr.even td {background:none;}
 
 .alturatotal {
@@ -23,7 +28,10 @@ body {
   background-repeat: repeat-y;
   background-attachment:fixed;
   background-position: center bottom;
-  font-size: 12px;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 12px;
+  font-family: arial;
 }
 
 .conborde {
@@ -31,12 +39,38 @@ body {
     padding: 0px;
 }
 
+/* Acerca */
+
+.acerca {
+  width: 330px;
+  height: 219px;
+  background-image: url(../images/globo_acerca.png);
+  padding: 0px;
+  position: relative;
+  z-index: 3;
+  top: 70px;
+  left: 170px;
+  display: none;
+}
+
+.acerca .contenido_globo {
+  color: #949292;
+  float: left;
+  position: relative;
+  top: -40px;
+  left: 55px;
+  width: 220px;
+  height: 140px;
+}
+
+/* Logo */
+
 .logo {
   padding-top: 0px;
   float: left;
   position: relative;
   z-index: 2;
-  top: 10px;
+  top: 130px;
   left: 660px;
 }
 
@@ -63,7 +97,7 @@ nav {
   float: left;
   position: relative;
   z-index: 1;
-  top: -50px;
+  top: 50px;
   color: #b2b2b2;
   /*right: 440px*/
 }
@@ -79,11 +113,9 @@ nav ul li {
     padding-left: 5px;
     padding-right: 5px;
     color: #bebebe;
-    font-family: Arial;
 }
 
 nav ul li a {
-    font-weight: bold;
     color: #bebebe;
 }
 

@@ -1,11 +1,18 @@
 <%= javascript_include_tag 'jquery-1.5.2' %>
 <script type="text/javascript">                                         
   $(document).ready(function() {
-    $("#menu").hide();
+    /*$("#menu").hide();*/
+    /*$("#acerca").hide();*/
     $("#logo").click(function(event){
       event.preventDefault();
-      $("#menu").fadeIn('slow', 'swing');
+      $("#menu").fadeIn('slow');
       /*$("#menu").animate({ height: 'show', width: 'show', opacity: 'show'}, 'slow');*/
+    });
+    $("#link_acerca").toggle(function(){
+      $("#acerca").fadeIn('slow');
+      /*$("#menu").animate({ height: 'show', width: 'show', opacity: 'show'}, 'slow');*/
+    },function(){
+      $("#acerca").fadeOut('slow');
     });
   });
 </script>
