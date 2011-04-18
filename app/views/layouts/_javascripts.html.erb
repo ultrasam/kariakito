@@ -2,12 +2,12 @@
 <%= javascript_include_tag 'jquery.tabSlideOut.v1.3' %>
 <script type="text/javascript">                                         
   $(document).ready(function() {
-    /*$("#menu").hide();*/
-    /*$("#acerca").hide();*/
+    $("#link_acerca").focusout(function(){
+      $("#acerca").fadeOut('slow');
+    });
     $("#logo").click(function(event){
       event.preventDefault();
       $("#menu").fadeIn('slow');
-      /*$("#menu").animate({ height: 'show', width: 'show', opacity: 'show'}, 'slow');*/
     });
     $("#link_acerca").toggle(function(){
       $("#contacto").fadeOut('fast', function(){
@@ -53,14 +53,14 @@
       $('.slide-out-div').tabSlideOut({
           tabHandle: '.handle',                               //class of the element that will become your tab
           pathToTabImage: '../images/feisbuc_cursor_on.png',  //path to the image for the tab //Optionally can be set using css
-          imageHeight: '122px',                               //height of tab image           //Optionally can be set using css
-          imageWidth: '40px',                                 //width of tab image            //Optionally can be set using css
-          tabLocation: 'top',                                 //side of screen where tab lives, top, right, bottom, or left
+          imageHeight: '19px',                               //height of tab image           //Optionally can be set using css
+          imageWidth: '19px',                                 //width of tab image            //Optionally can be set using css
+          tabLocation: 'left',                                 //side of screen where tab lives, top, right, bottom, or left
           speed: 300,                                         //speed of animation
           action: 'click',                                    //options: 'click' or 'hover', action to trigger animation
           topPos: '200px',                                    //position from the top/ use if tabLocation is left or right
-          leftPos: '200px',                                    //position from left/ use if tabLocation is bottom or top
-          fixedPosition: false                                //options: true makes it stick(fixed position) on scroll
+          leftPos: '400px',                                    //position from left/ use if tabLocation is bottom or top
+          fixedPosition: true                                //options: true makes it stick(fixed position) on scroll
       });
 
   });

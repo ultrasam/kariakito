@@ -217,7 +217,9 @@ footer ul li a:hover {
 
 .slide-out-div {
     padding: 20px;
-    width: 250px;
+    width: 200px;
     background: #fff;
     border: 1px solid #29216d;
+    position: relative;
+    z-index: 5;
 }
