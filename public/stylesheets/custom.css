@@ -213,3 +213,11 @@ footer ul li a:hover {
     color: #949292;
 }
 
+/* El Tab */
+
+.slide-out-div {
+    padding: 20px;
+    width: 250px;
+    background: #fff;
+    border: 1px solid #29216d;
+}
