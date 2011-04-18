@@ -9,10 +9,42 @@
       /*$("#menu").animate({ height: 'show', width: 'show', opacity: 'show'}, 'slow');*/
     });
     $("#link_acerca").toggle(function(){
-      $("#acerca").fadeIn('slow');
-      /*$("#menu").animate({ height: 'show', width: 'show', opacity: 'show'}, 'slow');*/
+      $("#contacto").fadeOut('fast', function(){
+        $("#acerca").fadeIn('slow');
+      });
     },function(){
       $("#acerca").fadeOut('slow');
+    });
+    $("#link_contacto").toggle(function(){
+      $("#acerca").fadeOut('fast', function(){
+        $("#contacto").fadeIn('slow');
+      });
+    },function(){
+      $("#contacto").fadeOut('slow');
+    });
+    /* Facebook Logo */
+    $("#facebook_on").hide();
+    $("#facebook_off").hover(function(){
+      $("#facebook_off").hide();
+      $("#facebook_on").show();
+    },function(){
+    });
+    $("#facebook_on").hover(function(){
+    },function(){
+      $("#facebook_on").hide();
+      $("#facebook_off").show();
+    });
+    /* Twitter Logo */
+    $("#twitter_on").hide();
+    $("#twitter_off").hover(function(){
+      $("#twitter_off").hide();
+      $("#twitter_on").show();
+    },function(){
+    });
+    $("#twitter_on").hover(function(){
+    },function(){
+      $("#twitter_on").hide();
+      $("#twitter_off").show();
     });
   });
 </script>
